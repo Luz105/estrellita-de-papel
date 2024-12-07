@@ -1,0 +1,241 @@
+/* Estilos básicos para el cuerpo */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8dce1; 
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    line-height: 1.5; 
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: rgb(204, 127, 133); 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Se ajusta al 100% de la pantalla */
+    box-sizing: border-box;
+}
+
+.header h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.header h2 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+/* Estilos del menú principal */
+ul#menu {
+    background: rgb(143, 78, 78); 
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul#menu li {
+    color: #fff;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative; /* Necesario para posicionar submenús */
+    font-size: 18px;
+}
+
+ul#menu li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+ul#menu li:hover > a {
+    color: #eae0b2
+}
+
+/* Estilos para los submenús */
+ul#menu ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background: #333;
+    color: #fff;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+ul#menu ul li {
+    display: block;
+    margin: 0;
+}
+
+ul#menu ul li a {
+    display: block;
+    padding: 5px 20px;
+    text-align: left;
+}
+
+ul#menu ul li a:hover {
+    color: #eae0b2;
+    background: #444;
+}
+
+/* Mostrar submenú al pasar el ratón */
+ul#menu li:hover > ul {
+    display: block;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #d8345f;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #333;
+}
+
+article h3 {
+    color: rgb(185, 43, 126);
+    font-size: 20px;
+}
+
+article p {
+    color: #555;
+}
+/* Estilos para los submenús */
+ul#menu ul {
+    display: none; /* El submenú está oculto por defecto */
+    position: absolute;
+    top: 40px;
+    background: #5c1e26; /* Color de fondo oscuro para el submenú */
+    color: #ecf0f1; /* Color de texto claro */
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    visibility: hidden; /* Invisible por defecto */
+    opacity: 0; /* Invisible por defecto */
+    transition: visibility 0.5s, opacity 0.5s; /* Transición suave */
+}
+
+/* Mostrar submenú al pasar el ratón o al recibir foco */
+ul#menu li:hover > ul,
+ul#menu li:focus-within > ul {
+    display: block; /* Mostrar el submenú */
+    visibility: visible; /* Hacerlo visible */
+    opacity: 1; /* Hacerlo opaco */
+}
+
+/* Estilos adicionales para los ítems del menú */
+ul#menu li {
+    position: relative; /* Para que el submenú se posicione correctamente */
+}
+
+/* Estilos para los enlaces */
+ul#menu a {
+    color: #681825; /* Color del texto blanco para los enlaces */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s; /* Transición suave al pasar el ratón */
+}
+
+/* Efecto hover sobre los enlaces */
+ul#menu a:hover {
+    background-color: #333; /* Azul claro para el fondo cuando el ratón pasa por encima */
+    color: #fff; /* Mantener el color del texto blanco */
+}
+
+footer {
+    background-color: rgb(143, 78, 78); /* Fondo en un color marrón rojizo */
+    color: #fff; /* Color del texto en blanco */
+    text-align: center; /* Centra el texto en el footer */
+    padding: 2px; /* Espaciado interno pequeño para el contenido */
+}
+
+#back-to-top:hover {
+    background: #a02040;
+}
+
+/* Galería de imágenes */
+#galeria {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Barra lateral de redes sociales */
+.social-bar {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-bar a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #681825;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background 0.3s;
+}
+
+.social-bar a:hover {
+    background: #d8345f;
+}
+
+/* Estilo del botón */
+.button {
+    background-color: #8b0f58;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 600px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+

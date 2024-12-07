@@ -1,0 +1,14 @@
+/* Estilo para el contenedor de las imágenes */
+.imagenes-contenedor {
+    width: 400px;   /* Establece el ancho de la imagen */
+    height: auto;   /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen sea un bloque, lo que permite centrarlas */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+/* Estilo para las imágenes */
+img {
+    height: auto;
+    width: 100%;
+}

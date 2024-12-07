@@ -1,0 +1,26 @@
+/* Estilo general para las imágenes dentro de los productos */
+.producto img {
+    width: 300px;   /* Establece el ancho de la imagen */
+    height: auto;   /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen sea un bloque, lo que permite centrarlas */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilo para el contenedor de productos */
+#productos {
+    text-align: center; /* Centra el texto en el contenedor */
+    padding: 20px; /* Agrega espacio alrededor del contenedor */
+}
+
+/* Estilo para los títulos de los productos */
+.producto h3 {
+    font-size: 1.2em; /* Establece el tamaño de la fuente */
+    margin-top: 10px; /* Añade espacio superior */
+}
+
+/* Estilo adicional para los títulos del producto */
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
